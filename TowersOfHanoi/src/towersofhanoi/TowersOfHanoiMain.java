@@ -1,22 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package towersofhanoi;
 
 /**
- *
- * @author tvtut
+ * emeasurematics job interview coding challenge: towers of hanoi
+ * @author tvtuttle
  */
 public class TowersOfHanoiMain {
 
     /**
-     * @param args the command line arguments
+     * takes number of towers and number of disks as inputs from user
+     * towers must be between 5-10, disks between 3-40
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("hello happy world");
+        int disks;
+        int towers;
+        // get towers and disks from user
+        // placeholder values for now
+        disks = 3;
+        towers = 5;
+        // create model
+        Model towerModel = new Model();
+        // print output of solve from model
+        System.out.println(towerModel.solve(disks, towers));
     }
     
 }
