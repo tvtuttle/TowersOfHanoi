@@ -18,7 +18,7 @@ public class Tower{
     // initializes a tower with n Disks from size 1 to n
     public Tower(int n){
         tower = new ArrayList();
-        for (int i = 1; i <= n; i++) {
+        for (int i = n; i >= 1; i--) {
             tower.add(new Disk(i));
         }
     }

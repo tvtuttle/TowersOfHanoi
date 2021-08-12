@@ -16,8 +16,8 @@ public class TowersOfHanoiMain {
         int towers;
         // get towers and disks from user
         // placeholder values for now
-        disks = 3;
-        towers = 5;
+        disks = 5;
+        towers = 3;// just for testing, at the end this must be 3-5
         // create model
         Model towerModel = new Model();
         // print output of solve from model

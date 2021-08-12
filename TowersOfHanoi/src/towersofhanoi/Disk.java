@@ -6,11 +6,15 @@ package towersofhanoi;
  * @author tvtut
  */
 public class Disk {
-    int size;
+    private int size;
     
     public Disk(){size = 0;} // shouldn't be used
     public Disk(int i){
         size = i;
+    }
+    
+    public int getSize(){
+        return size;
     }
     
     @Override
