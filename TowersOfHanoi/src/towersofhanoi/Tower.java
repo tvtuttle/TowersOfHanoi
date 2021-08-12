@@ -33,6 +33,11 @@ public class Tower{
         return tower.remove(tower.size()-1);
     }
     
+    // stack read operation, returns size from top value of stack
+    public int read(){
+        return tower.get(tower.size()-1).getSize();
+    }
+    
     // check if tower is empty
     public boolean isEmpty(){
         return tower.isEmpty();
