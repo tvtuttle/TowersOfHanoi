@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class TowersOfHanoiMain {
 
     /**
+     * This is the main file, run this to start the program
      * takes number of towers and number of disks as inputs from user
      * towers must be between 5-10, disks between 3-40
      * Objective: move all disks from the first tower to the last tower, observing
