@@ -1,6 +1,8 @@
 
 package towersofhanoi;
 
+import java.util.Scanner;
+
 /**
  * emeasurematics job interview coding challenge: towers of hanoi
  * @author tvtuttle
@@ -10,14 +12,26 @@ public class TowersOfHanoiMain {
     /**
      * takes number of towers and number of disks as inputs from user
      * towers must be between 5-10, disks between 3-40
+     * Objective: move all disks from the first tower to the last tower, observing
+     * the traditional rules of Towers of Hanoi
      */
     public static void main(String[] args) {
         int disks;
         int towers;
         // get towers and disks from user
-        // placeholder values for now
-        disks = 4;
-        towers = 3;// just for testing, at the end this must be 3-5
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter the number of disks(3-40):");
+        disks = sc.nextInt();
+        while(disks < 3 || disks > 40){
+            System.out.println("Illegal Input. Please try again(3-40):");
+            disks = sc.nextInt();
+        }
+        System.out.println("Please enter the number of towers(5-10)");
+        towers = sc.nextInt();
+        while(towers<5||towers>10){
+            System.out.println("Illegal Input. Please try again(5-10)");
+            towers = sc.nextInt();
+        }
         // create model, initializes Tower and Disk objects
         Model towerModel = new Model();
         // print output of solve from model
