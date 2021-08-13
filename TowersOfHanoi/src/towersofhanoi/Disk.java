@@ -3,7 +3,7 @@ package towersofhanoi;
 
 /**
  * Disk object: contains a size value
- * @author tvtut
+ * @author tvtuttle
  */
 public class Disk {
     private int size;

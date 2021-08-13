@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 /**
  * Tower object: a stack (implemented via ArrayList) that contains Disk objects
- * @author tvtut
+ * @author tvtuttle
  */
 public class Tower{
     private ArrayList<Disk> tower;

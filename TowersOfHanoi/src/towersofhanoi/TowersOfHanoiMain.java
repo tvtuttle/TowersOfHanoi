@@ -4,7 +4,7 @@ package towersofhanoi;
 import java.util.Scanner;
 
 /**
- * emeasurematics job interview coding challenge: towers of hanoi
+ * Towers of Hanoi coding challenge main file
  * @author tvtuttle
  */
 public class TowersOfHanoiMain {

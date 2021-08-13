@@ -32,7 +32,15 @@ public class Model {
         // via trial and error the below value was determined as the most flexible
         // the concept of the "k" value was inspired by the Frame-Stewart algorithm:
         // https://en.wikipedia.org/wiki/Tower_of_Hanoi#Frame%E2%80%93Stewart_algorithm
-        k = (disk/tower)*2;
+        // k = 4 performed best for large inputs with 10 towers
+        // however, larger k values performed better with fewer towers
+        if (tower <= 7){
+            k = 8;
+        }
+        else if (tower > 7){
+            k = 4;
+        }
+//        k = towers;
         towers = new Tower[tower];
         // in first tower, fill with all disks; others will be empty
         towers[0] = new Tower(disk);
@@ -69,7 +77,7 @@ public class Model {
     // separate method for recursion purposes
     // this is for the general use case of 5-10 towers variable
     // Currently, it can solve 29 disks with 10 towers in reasonable time
-    // any more than that and it has issues
+    // any more than that and it has issues due to exponential growth
     private String solve(int disks, int start, int target, ArrayList<Integer> spares){
         if (disks == 0){}//do nothing
         else if (disks == 1){
